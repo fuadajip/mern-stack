@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend from mern frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuadajip/mern-stack.git"
+  },
+  "keywords": [
+    "backend",
+    "mern"
+  ],
+  "author": "fuadajip",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fuadajip/mern-stack/issues"
+  },
+  "homepage": "https://github.com/fuadajip/mern-stack#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
