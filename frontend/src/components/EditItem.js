@@ -6,9 +6,8 @@ import ItemService from './ItemService';
 class EditItem extends React.Component {
     constructor(props){
         super(props);
-        this.state = { value : {
-            item : ''
-        }};
+        this.state = 
+        { value : { item : ''} };
 
         this.addItemService = new ItemService();
         this.handleChange = this.handleChange.bind(this);
@@ -27,12 +26,12 @@ class EditItem extends React.Component {
     }
 
     handleChange(e){
-        this.setState({value: e.target.value});
+        this.setState({value : { item: e.target.value } });
     }
 
     handleSubmit(e){
         e.preventDefault();
-        this.addItemService.updateData(this.state.value, this.props.match.params.id);
+        this.addItemService.updateData(this.state.value.item, this.props.match.params.id);
         this.props.history.push('/all');
     }
 
