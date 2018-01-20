@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 import ItemService from './ItemService';
@@ -36,12 +37,14 @@ class IndexItem extends React.Component {
     render(){
         return (
             <div className="container">
+                <Link to={"/add"} className="btn btn-primary float-right">Add</Link>
                 <table className="table table-striped">
                     <thead>
                         <tr>
                             <td>No</td>
                             <td>Name</td>
-                            <td>Action</td>
+                            <td>Edit</td>
+                            <td>Delete</td>
                         </tr>
                     </thead>
                     <tbody>

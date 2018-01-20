@@ -24,14 +24,17 @@ class AddItem extends React.Component {
     render () {
         return(
             <div className="container"> 
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                    Add Item: 
-                    <input type="text" value={this.state.value} onChange={this.handleChange} className="form-control"/>
-                    </label>
-                    <br/>
-                    <input type="submit" value="Submit" className="btn btn-primary"/>
-                </form>
+                <div className="row">
+                    <div className="col-md-6 offset-md-3">
+                        <form onSubmit={this.handleSubmit}>
+                            <div className="form-group">
+                                <label> Add Item:   </label>
+                                <input type="text" value={this.state.value} onChange={this.handleChange} className="form-control"/>
+                            </div>
+                            <input type="submit" value="Submit" className="btn btn-primary btn-block"/>
+                        </form>
+                    </div>
+                </div>  
             </div>
         )
     }

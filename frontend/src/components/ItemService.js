@@ -22,6 +22,12 @@ class ItemService {
             }))
             .catch(err => console.log(err))
     }
+
+    deleteData(id){
+        axios.get('http://localhost:3020/items/delete/' + id)
+        .then(console.log('Deleted'))
+        .catch(err => {console.log(err)});
+     }
 }
 
 export default ItemService;
