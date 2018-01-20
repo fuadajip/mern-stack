@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class ItemService {
     sendData(data) {
-        axios.post('http://localhost:3020/items/add/post', {
+        axios.post('http://localhost:3020/items/add/', {
                 item: data,
             })
             .then((res) => {

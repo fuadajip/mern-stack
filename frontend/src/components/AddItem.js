@@ -18,7 +18,7 @@ class AddItem extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.addItemService.sendData(this.state.value);
-        this.props.history.push('/');
+        this.props.history.push('/all');
     }
 
     render () {
