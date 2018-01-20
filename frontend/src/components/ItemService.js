@@ -12,6 +12,14 @@ class ItemService {
             console.log(err);
         })
     }
+
+    updateData(data, id){
+        axios.post('http://localhost:3020/items/edit/'+id, {
+          item: data
+        })
+        .then(res => this.setState({ items: res.data }))
+        .catch(err => console.log(err))
+      }
 }
 
 export default ItemService;
